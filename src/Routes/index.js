@@ -2,7 +2,7 @@ const { Router } = require('express');
 const router = Router();
 const fs = require('fs');
 const json_books= fs.readFileSync('src/books.json', 'utf-8');
-const books = JSON.parse(json_books);
+let books = JSON.parse(json_books);
 
 router.get('/', (req, res) => {
     res.render('index.ejs', {
@@ -30,7 +30,9 @@ router.post('/new-entry', (req, res) => {
 });
 
 router.get('/delete/:Actividad', (req, res) => {
-    console.log(req.params);
-    res.send("Recibido");
-})
+    books = books.Actividad(book => book.Actividad != req.params.Actividad);
+    const json_books = JSON.stringify(books)
+fs.writeFileSync('src/books.json', json_books, 'utf-8');
+res.redirect('/');
+});
 module.exports = router;
