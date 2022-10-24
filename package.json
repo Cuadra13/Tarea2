@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20",
+    "uuid": "^9.0.0"
+  },
+  "name": "tarea2",
+  "version": "0.0.1",
+  "description": "Tarea 2 Nelson Cuadra 61941129",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "author": "Nelson Cuadra",
+  "license": "ISC"
+}

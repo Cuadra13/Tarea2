@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <% books.forEach(function (book) { %>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <%= book.Actividad %>
+                        </div>
+                        <div class="card-body">
+                            <p> <%= book.Categoria %></p>
+                        </div>
+                        <div class="card-body">
+                            <p> <%= book.Valor %></p>
+                        </div>
+                        <div class="card-body">
+                            <p> <%= book.Disponible %></p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="/delete/book.Actividad">
+                                Borrar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <% }) %>
+    </div>
+
+</body>
+
+</html>

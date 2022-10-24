@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividades</title>
+</head>
+<body>
+    <div class="container p-4">
+        <form method="POST" action="/new-entry" class="card card-body">
+           <div class="form-group">
+            <label for="Actividad">Actividad</label>
+            <input type="text" class="form-control" name="Actividad" id = "Actividad" placeholder="Ingresa una nueva activdad" autofocus required>
+           </div>
+
+           <div class="form-group">
+            <label for="categoria">Categoria</label>
+            <input type="text" class="form-control" name="Categoria" id = "Categoria" placeholder="Ingresa una nueva categoria" autofocus required>
+           </div>
+
+           <div class="form-group">
+            <label for="Valor">Valor</label>
+            <input type="text" class="form-control" name="Valor" id = "Valor" placeholder="Ingresa un nuevo valor" autofocus required>
+           </div>
+
+           <div class="form-group">
+            <label for="Disponible">Disponible</label>
+            <input type="text" class="form-control" name="Disponible" id = "Disponible" placeholder="True or false" autofocus required>
+           </div>
+           <input type="submit" value="Guardar actividad">
+        </form>
+    </div>
+</body>
+</html>
